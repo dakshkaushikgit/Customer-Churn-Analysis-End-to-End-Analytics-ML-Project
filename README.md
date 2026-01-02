@@ -64,4 +64,24 @@ Any organization with recurring customers and transactional data can adapt this 
     G --> H[Predicted Churn Outputs]
     H --> I[Power BI: Churn Prediction Dashboard]
  ```
+## STEP 1 – SQL Server ETL
+
+### Key ETL Design Decisions
+* Separate staging and production tables
+* Enforce primary key on Customer_ID
+* Preserve data integrity while handling missing values
+* Standardize categorical defaults ("None", "No", "Others")
+
+### Data Validation
+* Distinct value profiling
+* Null analysis across all 32 attributes
+* Revenue consistency checks
+* Churn totals validated against aggregates
+
+### Output Tables & Views
+* prod_Churn – cleansed analytical dataset
+* vw_ChurnData – customers who stayed or churned
+* vw_JoinData – new joiners for churn prediction
+
+  
 End-to-end customer churn analytics and prediction solution using SQL Server, Power BI, and Random Forest modelling—built to replicate enterprise-grade ETL, KPI standardisation, and retention decision workflows.
