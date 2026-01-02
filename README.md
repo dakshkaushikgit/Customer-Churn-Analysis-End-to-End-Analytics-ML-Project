@@ -27,6 +27,9 @@ graph LR
 * Competitive Pressure: 
      * Better devices and better offers dominate competitor churn reasons
 <br/>
+![DASHBOARD - Summary](OUTPUTS/Churn%20Analysis-Summary.png)
+
+<br/>
 
 ## :hammer_and_wrench: Tech Stack & Skills 
 
