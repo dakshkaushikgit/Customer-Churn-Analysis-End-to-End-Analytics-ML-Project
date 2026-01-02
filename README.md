@@ -30,9 +30,9 @@ Any organization with recurring customers and transactional data can adapt this 
 * Enable proactive, operationally actionable retention insights
 
 ## Dataset
-~6,400 customer records<br/>
-32 structured attributes
-* Covers demographics, services, contracts, billing, tenure, revenue, and churn reasons
+* ~6,400 customer records<br/>
+* 32 structured attributes
+  * Covers demographics, services, contracts, billing, tenure, revenue, and churn reasons
 
 ## Technology Stack
 
