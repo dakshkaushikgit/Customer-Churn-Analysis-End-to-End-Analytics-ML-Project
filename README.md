@@ -79,6 +79,7 @@ Any organization with recurring customers and transactional data can adapt this 
 * Churn totals validated against aggregates
 
 ### Output Tables & Views
+```mermaid
 graph TD
 
 %% Source
@@ -122,7 +123,7 @@ classDef view fill:#f1f8e9,stroke:#33691e,stroke-width:2px;
 
 class D prod;
 class E1,E2 view;
-
+```
 
   
 End-to-end customer churn analytics and prediction solution using SQL Server, Power BI, and Random Forest modelling—built to replicate enterprise-grade ETL, KPI standardisation, and retention decision workflows.
