@@ -51,5 +51,16 @@ Any organization with recurring customers and transactional data can adapt this 
   * Pandas, NumPy
   * Scikit-learn
   * Random Forest Classification
+
+ ## Architecture
+ graph TD
+    A[CSV Source] --> B[SQL Server: stg_Churn]
+    B --> C{Validation & Cleaning}
+    C --> D[SQL Server: prod_Churn]
+    D --> E[SQL Views: Reporting & ML]
+    E --> F[Power BI Dashboards]
+    E --> G[Python ML Model: Random Forest]
+    G --> H[Predicted Churn Outputs]
+    H --> I[Power BI: Churn Prediction Dashboard]
    
 End-to-end customer churn analytics and prediction solution using SQL Server, Power BI, and Random Forest modelling—built to replicate enterprise-grade ETL, KPI standardisation, and retention decision workflows.
