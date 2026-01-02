@@ -79,51 +79,9 @@ Any organization with recurring customers and transactional data can adapt this 
 * Churn totals validated against aggregates
 
 ### Output Tables & Views
-```mermaid
-graph TD
-
-%% Source
-A[CSV Source]
-
-%% Staging Layer
-subgraph STAGING["Staging Layer"]
-    B[stg_Churn]
-end
-
-%% Production Layer (highlighted)
-subgraph PRODUCTION["Production Layer (Single Source of Truth)"]
-    D[prod_Churn]
-end
-
-%% Semantic / Reporting Layer (highlighted)
-subgraph SEMANTIC["Semantic & Reporting Layer"]
-    E1[vw_ChurnData<br/>(Stayed + Churned)]
-    E2[vw_JoinData<br/>(New Joiners)]
-end
-
-%% Downstream Consumers
-F[Power BI Dashboards]
-G[Python ML Model<br/>Random Forest]
-H[Predicted Churn Outputs]
-I[Power BI Churn Prediction Dashboard]
-
-%% Flow
-A --> B
-B --> D
-D --> E1
-D --> E2
-E1 --> F
-E1 --> G
-G --> H
-H --> I
-
-%% Styling
-classDef prod fill:#e3f2fd,stroke:#1565c0,stroke-width:2px;
-classDef view fill:#f1f8e9,stroke:#33691e,stroke-width:2px;
-
-class D prod;
-class E1,E2 view;
 ```
-
-  
+* prod_Churn – cleansed analytical dataset
+* vw_ChurnData – customers who stayed or churned
+* vw_JoinData – new joiners for churn prediction
+```  
 End-to-end customer churn analytics and prediction solution using SQL Server, Power BI, and Random Forest modelling—built to replicate enterprise-grade ETL, KPI standardisation, and retention decision workflows.
