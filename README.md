@@ -42,14 +42,14 @@ Any organization with recurring customers and transactional data can adapt this 
 
 ### Analytics & Visualization
 * Power BI
- * DAX measures
- * Data modeling
- * Interactive dashboards
- * Drill-throughs & tooltips
+  * DAX measures
+  * Data modeling
+  * Interactive dashboards
+  * Drill-throughs & tooltips
 ### Machine Learning
 * Python
- * Pandas, NumPy
- * Scikit-learn
- * Random Forest Classification
+  * Pandas, NumPy
+  * Scikit-learn
+  * Random Forest Classification
    
 End-to-end customer churn analytics and prediction solution using SQL Server, Power BI, and Random Forest modelling—built to replicate enterprise-grade ETL, KPI standardisation, and retention decision workflows.
