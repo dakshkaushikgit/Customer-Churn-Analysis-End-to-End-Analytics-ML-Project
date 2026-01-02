@@ -53,9 +53,10 @@ Any organization with recurring customers and transactional data can adapt this 
   * Random Forest Classification
 
  ## Architecture
+ 
  graph TD
-    A[CSV Source] --> B[SQL Server: stg_Churn]
-    B --> C{Validation & Cleaning}
+     A[CSV Source] --> B[SQL Server: stg_Churn]
+     B --> C{Validation & Cleaning}
     C --> D[SQL Server: prod_Churn]
     D --> E[SQL Views: Reporting & ML]
     E --> F[Power BI Dashboards]
