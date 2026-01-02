@@ -28,9 +28,15 @@ graph LR
      * Better devices and better offers dominate competitor churn reasons
 <br/>
 
+### DASHBOARDS 
+
 ![DASHBOARD - Summary](IMAGES/Churn%20Analysis-Summary.png)
 
-<br/>
+<p align="center">
+  <img src="IMAGES/Churn Reason_tooltip2.png" width="400" alt="Customer Detail Tooltip">
+  <br>
+  <em> Custom tooltip on Churn Category showing Churn Reason on hover.</em>
+</p>
 
 ![DASHBOARD - Predictio](IMAGES/Churn%20Analysis-Prediction.png)
 
